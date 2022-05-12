@@ -138,11 +138,9 @@ Node* DFS(Node* initial, int* cont){
 
     while(aux){
       push(pila,aux);
+      free(aux);
       aux=next(adj);
     }
-
-    free(aux);
-
   }
   return NULL;
 }
