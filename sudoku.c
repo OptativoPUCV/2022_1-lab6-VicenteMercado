@@ -45,12 +45,12 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
   int array[10];
-  int i,j;
+  int i,j,k;
   
   for(i=0;i<9;i++) //FILAS
   { 
-    for(i=0;i<10;i++){
-      array[i]=0;
+    for(k=0;k<10;k++){
+      array[k]=0;
     }
     
     for(j=0;j<9;j++){
