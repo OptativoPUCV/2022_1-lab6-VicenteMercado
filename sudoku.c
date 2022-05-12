@@ -125,13 +125,13 @@ int is_final(Node* n){
 }
 
 Node* DFS(Node* initial, int* cont){
-  /*Stack* pila = createStack();
+  Stack* pila = createStack();
   push(pila,initial);
   int tamanyoP = get_size(pila);
   while(tamanyoP >0){
     Node* nodo = first(pila);
     popFront(pila);
-    if (is_final(nodo)) continue;
+    if (is_final(nodo)) return initial;
 
     List* adj = get_adj_nodes(nodo);
     Node* aux = first(adj);
@@ -143,7 +143,7 @@ Node* DFS(Node* initial, int* cont){
 
     free(aux);
 
-  }*/
+  }
   return NULL;
 }
 
