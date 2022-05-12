@@ -127,7 +127,8 @@ int is_final(Node* n){
 Node* DFS(Node* initial, int* cont){
   Stack* pila = createStack();
   push(pila,initial);
-  while(size(pila)>0){
+  int tamanyoP = get_size(pila);
+  while(tamanyoP >0){
     Node* nodo = first(pila);
     popFront(pila);
     if (is_final(nodo)) continue;
@@ -139,6 +140,8 @@ Node* DFS(Node* initial, int* cont){
       push(pila,aux);
       aux=next(adj);
     }
+
+    free(initial);
 
   }
   return NULL;
