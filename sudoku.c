@@ -131,7 +131,7 @@ Node* DFS(Node* initial, int* cont){
   while(tamanyoP >0){
     Node* nodo = first(pila);
     popFront(pila);
-    if (is_final(nodo)) return initial;
+    if (is_final(nodo)) return nodo;
 
     List* adj = get_adj_nodes(nodo);
     Node* aux = first(adj);
