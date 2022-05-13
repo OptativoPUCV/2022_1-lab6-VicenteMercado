@@ -143,15 +143,15 @@ Node* DFS(Node* initial, int* cont){
     }
 
     free(aux);
+    (*cont)++;
   }
-  cont++;
   return NULL;
 }
 
 
 
-/*
-int main( int argc, char *argv[] ){
+
+/*int main( int argc, char *argv[] ){
 
   Node* initial= read_file("s12a.txt");;
 
