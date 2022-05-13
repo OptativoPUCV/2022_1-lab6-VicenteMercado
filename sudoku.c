@@ -130,6 +130,7 @@ Node* DFS(Node* initial, int* cont){
   int tamanyoP = get_size(pila);
   while(tamanyoP >0){
     Node* nodo = first(pila);
+    if(!nodo) return NULL;
     popFront(pila);
     if (is_final(nodo)) return nodo;
 
