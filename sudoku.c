@@ -47,7 +47,7 @@ int is_valid(Node* n){
   int array[10];
   int i,j,k,m;
   
-  for(i=0;i<9;i++) //FILAS
+  for(i=0;i<9;i++)
   { 
     for(k=0;k<10;k++){
       array[k]=0;
@@ -61,7 +61,7 @@ int is_valid(Node* n){
     }
   }
 
-  for(i=0;i<9;i++) //COLUMNAS
+  for(i=0;i<9;i++) 
   { 
     for(k=0;k<10;k++){
       array[k]=0;
@@ -75,7 +75,7 @@ int is_valid(Node* n){
     }
   }
 
-  for(m=0;m<9;m++){ //SUBMATRICES
+  for(m=0;m<9;m++){ 
     for(k=0;k<10;k++){
       array[k]=0;
     }
